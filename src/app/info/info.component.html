@@ -1,0 +1,12 @@
+<head><link rel="stylesheet" href="https://fonts.google.com/specimen/Big+Shoulders+Display"></head>
+<div class="container">
+    <div class="column" [ngClass]="car.class" *ngFor="let car of carInfo"> 
+        <img src="{{car.img}}" alt="">
+        <h3>{{car.carType}}</h3>
+        <p>{{car.info}}</p>
+        <button>Learn More</button>
+    </div>
+</div>
+<!-- TODO mouseover - start solid, transp. text, on hover changes to outline, white text -->
+
+<!-- ngClass="{'cardBackground1':car.carType === 'Sedans','cardBackground2', 'cardBackground3'}" -->
